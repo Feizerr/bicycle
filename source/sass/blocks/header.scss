@@ -4,6 +4,8 @@
   background: url("../img/img Bike.jpg") no-repeat  center;
   background-size: auto 100%;
   background-color: $dark;
+  margin-bottom: 150px;
+
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/img Bike@2x.jpg");
@@ -16,6 +18,7 @@
     background-position: center -42px;
     min-height: 340px;
     position: relative;
+    margin-bottom: 70px;
   }
 }
 
