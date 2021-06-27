@@ -147,23 +147,23 @@
 
 
 .video__button:focus {
-	outline: none;
+  outline: none;
 }
 
 .video__player:hover .video__button,
 .video__button:focus .video__button {
-	background-color: $white;
+  background-color: $white;
 }
 
 .video__player:active .video__button,
 .video__button:active .video__button {
-	background-color: rgba($white, 0.8);
+  background-color: rgba($white, 0.8);
 }
 
 .video__player--enabled {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .video__player--enabled .video__button {
-	display: block;
+  display: block;
 }

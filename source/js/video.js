@@ -1,30 +1,33 @@
-function findVideos() {
-  let videos = document.querySelectorAll('.video__player');
+'use strict';
 
-  for (let i = 0; i < videos.length; i++) {
-      setupVideo(videos[i]);
+function findVideos() {
+  var videos = document.querySelectorAll('.video__player');
+
+  for (var i = 0; i < videos.length; i++) {
+    setupVideo(videos[i]);
   }
 }
 
 function setupVideo(video) {
-  let link = video.querySelector('.video__link');
-  let media = video.querySelector('.video__media');
-  let button = video.querySelector('.video__button');
+  var link = video.querySelector('.video__link');
+  var button = video.querySelector('.video__button');
 
-  video.addEventListener('click', () => {
-      let iframe = createIframe();
+  var setupVideoHandler = function () {
+    var iframe = createIframe();
 
-      link.remove();
-      button.remove();
-      video.appendChild(iframe);
-  });
+    link.remove();
+    button.remove();
+    video.appendChild(iframe);
+  };
+
+  video.addEventListener('click', setupVideoHandler);
 
   link.removeAttribute('href');
   video.classList.add('video--enabled');
 }
 
 function createIframe() {
-  let iframe = document.createElement('iframe');
+  var iframe = document.createElement('iframe');
 
   iframe.setAttribute('allowfullscreen', '');
   iframe.setAttribute('allow', 'autoplay');
@@ -37,10 +40,9 @@ function createIframe() {
 }
 
 function generateURL() {
-  let query = '?rel=0&showinfo=0&autoplay=1';
+  var query = '?rel=0&showinfo=0&autoplay=1';
 
   return 'https://www.youtube.com/embed/KkVG8nCbPvU' + query;
 }
 
 findVideos();
-
