@@ -24,18 +24,18 @@
       </button>
 
       <nav class="header__navigation navigation navigation-closed navigation-nojs">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">О нас</a>
+        <ul>
+          <li>
+            <a href="#about" class="navigation__link">О нас</a>
           </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">Виды велосипедов</a>
+          <li>
+            <a href="#types" class="navigation__link">Виды велосипедов</a>
           </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">Видео про велосипеды</a>
+          <li>
+            <a href="#video" class="navigation__link">Видео про велосипеды</a>
           </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">Контакты</a>
+          <li>
+            <a href="#contacts" class="navigation__link">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -58,7 +58,7 @@
           <input type="text" id="name-field" name="name" placeholder="Введите Ваше Имя" pattern="^[A-Za-zА-Яа-яЁё\s]+$" required>
           <label class="visually-hidden" for="tel-field">Поле для вашего телефона</label>
           <input type="tel" id="tel-field" name="tel" placeholder="Введите Ваш номер телефона" pattern="[0-9]{11}" required>
-          <button class="promo__button" method="post" type="submit" action="https://echo.htmlacademy.ru/">Подобрать велосипед мечты</button>
+          <button class="promo__button" method="post" type="submit" action="https://echo.htmlacademy.ru/" aria-label="Получить помощь">Подобрать велосипед мечты</button>
         </form>
       </section>
     </div>
@@ -66,27 +66,27 @@
 
   <main>
     <section class="facts">
-      <h2>Несколько фактов о нас</h2>
-      <ul class="facts__list">
-        <li class="facts__item">
+      <h2 id="about">Несколько фактов о нас</h2>
+      <ul>
+        <li>
           <p>
             <span>01</span>
           </p>
           <p>Самый широкий выбор велосипедов!</p>
         </li>
-        <li class="facts__item">
+        <li>
           <p>
             <span>02</span>
           </p>
           <p>Доставка велосипедов по всей России!</p>
         </li>
-        <li class="facts__item">
+        <li>
           <p>
             <span>03</span>
           </p>
           <p>Большой выбор крутых аксессуаров!</p>
         </li>
-        <li class="facts__item">
+        <li>
           <p>
             <span>04</span>
           </p>
@@ -96,37 +96,51 @@
     </section>
 
     <section class="types">
-      <div class="types__wrapper">
-        <h2>Виды велосипедов</h2>
-        <ul class="types__list">
-          <li class="types__item">
-            <a href="#form">
+      <h2 id="types">Виды велосипедов</h2>
+      <ul>
+        <li>
+          <a class="types__andreas" href="#form">
+            <picture>
+              <source type="image/webp" srcset="img/andreas.webp 1x, img/andreas@2x.webp 2x">
+              <img src="img/andreas.jpg" srcset="img/andreas@2x.jpg 2x" width="342" height="503" alt="Фото городского велосипеда Andreas">
+            </picture>
+            <p>Дорожный велосипед</p>
+          </a>
+        </li>
+        <li>
+          <a class="types__eberhard" href="#form">
+            <picture>
+              <source type="image/webp" srcset="img/eberhard.webp 1x, img/eberhard@2x.webp 2x">
+              <img src="img/eberhard.jpg" srcset="img/eberhard@2x.jpg 2x" width="342" height="566" alt="Фото горного велосипеда Eberhard">
+            </picture>
+            <p>Горный велосипед</p>
+          </a>
+        </li>
+        <li>
+          <a class="types__roger" href="#form">
+            <picture>
+              <source type="image/webp" srcset="img/roger.webp 1x, img/roger@2x.webp 2x">
+              <img src="img/roger.jpg" srcset="img/roger@2x.jpg 2x" width="342" height="512" alt="Фото детского велосипеда Roger">
+            </picture>
+            <p>Детский велосипед</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="video">
+      <div class="video__wrapper">
+        <h2 id="video">Видео про велосипеды</h2>
+        <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
+        <div class="video__player">
+          <a class="video__link" href="https://www.youtube.com/watch?v=KkVG8nCbPvU">
               <picture>
-                <source type="image/webp" srcset="img/andreas.webp 1x, img/andreas@2x.webp 2x">
-                <img src="img/andreas.jpg" srcset="img/andreas@2x.jpg 2x" width="342" height="503" alt="Фото городского велосипеда Andreas">
+                  <source srcset="img/josh 1.webp" type="image/webp">
+                  <img class="video__media" src="img/josh 1.jpg" alt="Как правильно подобрать велосипед">
               </picture>
-              <p>Дорожный велосипед</p>
-            </a>
-          </li>
-          <li class="types__item">
-            <a class="types__decoration" href="#form">
-              <picture>
-                <source type="image/webp" srcset="img/eberhard.webp 1x, img/eberhard@2x.webp 2x">
-                <img src="img/eberhard.jpg" srcset="img/eberhard@2x.jpg 2x" width="342" height="566" alt="Фото горного велосипеда Eberhard">
-              </picture>
-              <p>Горный велосипед</p>
-            </a>
-          </li>
-          <li class="types__item">
-            <a href="#form">
-              <picture>
-                <source type="image/webp" srcset="img/roger.webp 1x, img/roger@2x.webp 2x">
-                <img src="img/roger.jpg" srcset="img/roger@2x.jpg 2x" width="342" height="512" alt="Фото детского велосипеда Roger">
-              </picture>
-              <p>Детский велосипед</p>
-            </a>
-          </li>
-        </ul>
+          </a>
+          <button class="video__button" type="button" aria-label="Посмотреть видео"></button>
+        </div>
       </div>
     </section>
   </main>
@@ -134,7 +148,7 @@
   <footer class="footer">
     <section class="address">
       <div class="address__wrapper">
-        <h2>Как нас найти?</h2>
+        <h2 id="contacts">Как нас найти?</h2>
         <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
         <!-- не забыть указать размеры-->
         <picture>
@@ -145,15 +159,15 @@
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Свяжитесь с нами </h2>
-      <ul class="contacts__list">
-        <li class="contacts__item">
+      <ul>
+        <li>
           <a href="mailto:puteshestviemechta@gmail.ru">
             <svg class="contacts__mail" width="26" height="20">
               <use xlink:href="img/sprite_auto.svg#mail" x="0" y="0"></use>
             </svg>
             puteshestviemechta@gmail.ru</a>
         </li>
-        <li class="contacts__item">
+        <li>
           <a href="tel:+749978468446">
             <svg class="contacts__phone" width="21" height="24">
               <use xlink:href="img/sprite_auto.svg#phone" x="0" y="0"></use>
@@ -165,5 +179,6 @@
   </footer>
 
   <script src="js/script.js"></script>
+  <script src="js/video.js"></script>
 </body>
 </html>

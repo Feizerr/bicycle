@@ -1,28 +1,29 @@
 .address__wrapper {
   margin: 0 auto;
   text-align: center;
-  margin-bottom: 39px;
+  margin-bottom: 28px;
 }
 
 @media (max-width: $tablet-width) {
   .address__wrapper {
-    margin-bottom: 21px;
+    margin-bottom: 10px;
   }
 }
 
 @media (max-width: $mobile-width) {
   .address__wrapper {
     margin-bottom: 31px;
+    margin-bottom: 21px;
   }
 }
 
 .address h2 {
-  @include offset(0, 0);
   @include fonts(30px, 30px);
+  max-width: 500px;
+  margin: 0 auto 30px auto;
+  padding: 0;
   color: $almost-black;
   font-family: "OpenSans-SemiBold", "Arial", sans-serif;
-  margin-bottom: 30px;
-  padding: 0 10%;
 }
 
 @media (max-width: $tablet-width) {
@@ -39,17 +40,19 @@
 }
 
 .address p {
-  @include offset(0, 0);
   @include fonts(17px, 31px);
   color: rgba($black, 0.7);
-  padding: 0 30%;
+  padding: 0;
+  margin: 0 auto 42px auto;
   margin-bottom: 42px;
+  max-width: 551px;
 }
 
 @media (max-width: $tablet-width) {
   .address p {
     padding: 0 5%;
     margin-bottom: 20px;
+    max-width: 707px;
   }
 }
 
@@ -69,11 +72,11 @@
 @media (max-width: $tablet-width) {
   .address img {
     width: 698px;
-    height: auto;
+    max-height: 545px;
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-width) {
   .address img {
     width: 100%;
     height: auto;

@@ -1,18 +1,26 @@
 .facts {
   margin: 0 auto;
   text-align: center;
-  padding-bottom: 131px;
+  padding: 0 20px 152px 20px;
 }
 
 @media (max-width: $tablet-width) {
-  .fact {
-    margin-bottom: 70px;
+  .facts {
+    padding-bottom: 25px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .facts {
+    padding: 0 14px 81px 14px;
   }
 }
 
 .facts h2 {
-  @include offset(0, 0);
   @include fonts(30px, 30px);
+  padding: 0;
+  max-width: 500px;
+  margin: 0 auto;
   color: $almost-black;
   font-family: "OpenSans-SemiBold", "Arial", sans-serif;
   margin-bottom: 50px;
@@ -25,17 +33,23 @@
   }
 }
 
-.facts__list {
+@media (max-width: $mobile-width) {
+  .facts h2 {
+    max-width: 100%;
+  }
+}
+
+.facts ul {
   @include list-reset();
   margin: 0 auto;
-  max-width: 1166px;
-  padding: 0 20px;
+  max-width: 1187px;
+  padding: 0 10px;
   display: flex;
   justify-content: space-between;
 }
 
 @media (max-width: $tablet-width) {
-  .facts__list {
+  .facts ul {
     flex-wrap: wrap;
     padding: 0;
     width: 556px;
@@ -43,7 +57,7 @@
 }
 
 @media (max-width: $mobile-width) {
-  .facts__list {
+  .facts ul {
     flex-direction: column;
     align-items: center;
     width: 100%;
@@ -51,9 +65,9 @@
   }
 }
 
-.facts__item {
-  max-width: 253px;
-  margin-right: 38px;
+.facts li {
+  max-width: 263px;
+  margin-right: 37px;
 
   &:last-child {
     margin-right: 0;
@@ -61,14 +75,15 @@
 }
 
 @media (max-width: $tablet-width) {
-  .facts__item {
+  .facts li {
     width: 50%;
     margin-right: 0;
+    margin-bottom: 43px;
   }
 }
 
 @media (max-width: $mobile-width) {
-  .facts__item {
+  .facts li {
     width: 100%;
     margin-bottom: 35px;
 
@@ -94,5 +109,5 @@
   display: block;
   font-family: "OpenSans-Bold", "Arial", sans-serif;
   color: $cyan;
-  padding-bottom: 20px;
+  padding-bottom: 17px;
 }
