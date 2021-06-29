@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Магазин велосипедов Moon</title>
+  <meta name="description" content="Онлайн-магазин велосипедов Moon">
+  <meta name="Keywords" content="велосипеды, дорожные велосипеды, городские велосипеды, детские велосипеды, купить велосипед">
   <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/OpenSans-Bold.woff" as="font" type="font/woff" crossorigin>
   <link rel="preload" href="fonts/OpenSans-Light.woff2" as="font" type="font/woff2" crossorigin>
@@ -123,10 +125,13 @@
           <li>
             <a class="types__roger" href="#form">
               <picture>
-                <source type="image/webp" srcset="img/roger.webp 1x, img/roger@2x.webp 2x">
+                <source type="image/webp" data-srcset="img/roger.webp 1x, img/roger@2x.webp 2x">
                 <!-- 1х: 342px; 2x: 684px -->
-                <img src="img/roger.jpg" srcset="img/roger@2x.jpg 2x" width="342" height="512" alt="Фото детского велосипеда Roger">
+                <img class="lazyload" data-src="img/roger.jpg" data-srcset="img/roger@2x.jpg 2x" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" width="342" height="512" alt="Фото детского велосипеда Roger">
               </picture>
+              <noscript>
+                <img src="img/roger.jpg" width="342" height="512" alt="Фото детского велосипеда Roger">
+              </noscript>
               <p>Детский велосипед</p>
             </a>
           </li>
@@ -139,10 +144,13 @@
         <div class="video__player">
           <a class="video__link" href="https://www.youtube.com/watch?v=KkVG8nCbPvU">
               <picture>
-                  <source srcset="img/josh.webp" type="image/webp">
+                  <source data-srcset="img/josh.webp 1x, img/josh@2x.webp 2x" type="image/webp">
                   <!-- 1х: 929px; 2x: 1858px -->
-                  <img class="video__media" src="img/josh.jpg" alt="Как правильно подобрать велосипед">
+                  <img class="video__media lazyload" data-src="img/josh.jpg" data-srcset="img/josh@2x.jpg" alt="Как правильно подобрать велосипед" width="929" height="522" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=">
               </picture>
+              <noscript>
+                <img src="img/josh.jpg" data-srcset="img/josh@2x.jpg" alt="Как правильно подобрать велосипед" width="929" height="522">
+              </noscript>
           </a>
           <button class="video__button" type="button" aria-label="Посмотреть видео"></button>
         </div>
@@ -155,10 +163,13 @@
           <h2 id="contacts">Как нас найти?</h2>
           <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
           <picture>
-            <source type="image/webp" srcset="img/Rectangle.webp 1x, img/Rectangle@2x.webp 2x">
+            <source type="image/webp" data-srcset="img/Rectangle.webp 1x, img/Rectangle@2x.webp 2x">
             <!-- 1х: 698px; 2x: 1396px -->
-            <img src="img/Rectangle.jpg" srcset="img/Rectangle@2x.jpg 2x" width="698" height="545" alt="Карта с адресом нашего магазина">
+            <img class="lazyload" data-src="img/Rectangle.jpg" data-srcset="img/Rectangle@2x.jpg 2x" width="698" height="545" alt="Карта с адресом нашего магазина" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=">
           </picture>
+          <noscript>
+            <img src="img/Rectangle.jpg" width="698" height="545" alt="Карта с адресом нашего магазина">
+          </noscript>
         </div>
       </section>
       <section class="contacts">
@@ -183,5 +194,6 @@
     </footer>
   </div>
   <script src="js/main.js"></script>
+  <script src="js//vendor/lazysizes.min.js"></script>
 </body>
 </html>

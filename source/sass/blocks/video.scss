@@ -19,6 +19,7 @@
 @media (max-width: $mobile-width) {
   .video {
     padding: 83px 14px 0 14px;
+    margin-bottom: 68px;
     background: linear-gradient(to bottom, $the-darknest 0%, $the-darknest 89%, $white 89%);
   }
 }

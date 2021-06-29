@@ -8,7 +8,7 @@
 
 @media (max-width: $tablet-width) {
   .types {
-    padding-bottom: 22px;
+    padding-bottom: 18px;
     padding-top: 50px;
   }
 }
@@ -275,12 +275,13 @@
 
 @media (max-width: $tablet-width) {
   .types p {
-    padding-bottom: 49px;
+    padding-bottom: 53px;
   }
 }
 
 @media (max-width: $mobile-width) {
   .types p {
+    padding-top: 17px;
     padding-bottom: 43px;
   }
 }
