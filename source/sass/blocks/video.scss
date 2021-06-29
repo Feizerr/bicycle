@@ -138,13 +138,13 @@
 
 @media (max-width: $mobile-width) {
   .video__button {
-    top: 73.5%;
-    left: 40%;
+    top: 86%;
+    left: 50%;
+    transform: translate(-50%, -86%);
     width: 62px;
     height: 62px;
   }
 }
-
 
 .video__button:focus {
   outline: none;

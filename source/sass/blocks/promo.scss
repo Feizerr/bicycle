@@ -117,16 +117,19 @@
 
 @media (max-width: $tablet-width) {
   .promo__form p {
+    font-size: 18px;
     color: $black;
     margin-bottom: 30px;
-    max-width: 336px;
-    letter-spacing: 1px;
+    max-width: 325px;
+    letter-spacing: -0.005em;
   }
 }
 
 @media (max-width: $mobile-width) {
   .promo__form p {
-    max-width: 288px;
+    max-width: 95%;
+    letter-spacing: 0.8px;
+    padding: 5px 0 0 5px;
     margin-bottom: 21px;
   }
 }
@@ -136,6 +139,7 @@
   margin-bottom: 20px;
   border: 1px solid $grey;
   border-radius: 5px;
+  cursor: pointer;
 
   &:hover {
     cursor: pointer;
@@ -191,6 +195,7 @@
   border-radius: 5px;
   padding-top: 14px;
   padding-bottom: 10px;
+  cursor: pointer;
 
   @include fonts(15px, 21px);
 
@@ -215,5 +220,6 @@
 @media (max-width: $mobile-width) {
   .promo__button {
     max-width: 288px;
+    padding-top: 10px;
   }
 }

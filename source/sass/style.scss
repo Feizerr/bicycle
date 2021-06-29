@@ -1,7 +1,8 @@
+@import "global/body.scss";
 @import "global/mixins.scss";
 @import "global/fonts.scss";
 @import "global/variables.scss";
-@import "global/page.scss";
+@import "blocks/page.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/header.scss";
 @import "blocks/promo.scss";
@@ -11,3 +12,5 @@
 @import "blocks/facts.scss";
 @import "blocks/types.scss";
 @import "blocks/video.scss";
+@import "blocks/main.scss";
+@import "blocks/footer.scss";

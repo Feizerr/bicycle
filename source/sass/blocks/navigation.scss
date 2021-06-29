@@ -7,7 +7,7 @@
 }
 
 .navigation__fixed {
-  z-index: 2;
+  z-index: 5;
   height: 100%;
   position: fixed;
 }
@@ -18,7 +18,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 21px 30px 9px 29px;
+  padding: 20px 30px 9px 29px;
   border-bottom: 1px solid rgba($white, 0.2);
   margin-bottom: 255px;
 }
@@ -27,10 +27,13 @@
   .navigation ul {
     flex-direction: column;
     border-bottom: none;
-    padding-top: 100px;
-    padding-bottom: 138px;
-    flex-grow: 1;
+    padding: 100px 0 138px 0;
+    flex-grow: 10;
   }
+}
+
+.navigation li:not(:last-child) {
+  padding-right: 30px;
 }
 
 @media (max-width: $tablet-width) {
@@ -66,6 +69,7 @@
   font-weight: 500;
   color: $white;
   opacity: 0.7;
+  cursor: pointer;
 
   &:hover {
     color: $cyan;
@@ -82,7 +86,6 @@
     color: $wet-asphalt;
   }
 }
-
 
 @media (max-width: $tablet-width) {
   .navigation {

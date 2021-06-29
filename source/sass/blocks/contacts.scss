@@ -63,6 +63,7 @@
   @include fonts(16px, 22px);
   color: rgba($black, 0.5);
   position: relative;
+  cursor: pointer;
 
   &:hover {
     color: $cyan;
