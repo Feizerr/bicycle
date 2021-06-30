@@ -29,7 +29,7 @@ function setupVideo(video) {
   video.addEventListener('click', setupVideoHandler);
 
   link.removeAttribute('href');
-  video.classList.add('video--enabled');
+  video.classList.add('video__player--enabled');
 }
 
 function createIframe() {

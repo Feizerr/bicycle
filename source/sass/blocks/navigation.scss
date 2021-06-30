@@ -113,7 +113,7 @@
 }
 
 @media (max-width: $tablet-width) {
-  .navigation--closed .navigation li {
+  .navigation--closed li {
     display: none;
 
     &--active {
@@ -121,7 +121,7 @@
     }
   }
 
-  .navigation--closed .navigation ul {
+  .navigation--closed ul {
     display: none;
   }
 
