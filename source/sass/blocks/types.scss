@@ -22,7 +22,7 @@
 .types h2 {
   @include fonts(30px, 30px);
   margin: 0 auto;
-  font-family: "OpenSans-SemiBold", "Arial", sans-serif;
+  font-family: "opensans-semibold", "Arial", sans-serif;
   color: $almost-black;
   margin-bottom: 52px;
   width: 500px;
@@ -269,7 +269,7 @@
   @include fonts(22px, 34px);
   padding: 15px 0 10px 0;
   margin: 0 auto;
-  font-family: "OpenSans-SemiBold", "Arial", sans-serif;
+  font-family: "opensans-semibold", "Arial", sans-serif;
   color: $almost-black;
 }
 

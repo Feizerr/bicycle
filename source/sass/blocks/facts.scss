@@ -22,7 +22,7 @@
   max-width: 500px;
   margin: 0 auto;
   color: $almost-black;
-  font-family: "OpenSans-SemiBold", "Arial", sans-serif;
+  font-family: "opensans-semibold", "Arial", sans-serif;
   margin-bottom: 50px;
 }
 
@@ -108,7 +108,7 @@
 .facts span {
   @include fonts(28px, 38px);
   display: block;
-  font-family: "OpenSans-Bold", "Arial", sans-serif;
+  font-family: "opensans-bold", "Arial", sans-serif;
   color: $cyan;
   padding-bottom: 17px;
 }

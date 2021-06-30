@@ -42,7 +42,7 @@
 .promo p {
   @include offset(0, 0);
   @include fonts(20px, 32px);
-  font-family: "OpenSans-Light", "Arial", sans-serif;
+  font-family: "opensans-light", "Arial", sans-serif;
   opacity: 0.8;
   text-align: left;
   padding-bottom: 20px;
@@ -69,7 +69,7 @@
 .promo h2 {
   @include fonts(46px, 64px);
   text-align: left;
-  font-family: "OpenSans-Bold", "Arial", sans-serif;
+  font-family: "opensans-bold", "Arial", sans-serif;
   opacity: 1;
   padding-bottom: 20px;
   max-width: 435px;
@@ -112,7 +112,7 @@
   @include offset(0, 0);
   @include fonts(17px, 28px);
   padding-top: 4px;
-  font-family: "OpenSans-SemiBold", "Arial", sans-serif;
+  font-family: "opensans-semiBold", "Arial", sans-serif;
   text-align: center;
   margin-bottom: 20px;
   opacity: 1;
@@ -191,7 +191,7 @@
 .promo__button {
   background-color: $cyan;
   color: $black;
-  font-family: "OpenSans-SemiBold", "Arial", sans-serif;
+  font-family: "opensans-semiBold", "Arial", sans-serif;
   width: 100%;
   border: none;
   margin-top: 5px;
