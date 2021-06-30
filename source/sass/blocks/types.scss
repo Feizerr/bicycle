@@ -43,16 +43,19 @@
 
 .types ul {
   @include list-reset();
-  display: flex;
+  display: grid;
+  flex-wrap: wrap;
   justify-content: center;
-  max-width: 100%;
+  max-width: 1125px;
+  grid-template-columns: 1fr 1fr 1fr;
   margin: 0 auto;
   column-gap: 50px;
-  padding: 0 10%;
+  padding: 0;
 }
 
 @media (max-width: $tablet-width) {
   .types ul {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 0 51px;

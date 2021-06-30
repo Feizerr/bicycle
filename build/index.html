@@ -25,7 +25,6 @@
         <button class="header__toggle visually-hidden" type="button" aria-label="Открыть или закрыть меню">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-
         <nav class="navigation header__navigation navigation-closed navigation-nojs">
           <ul>
             <li>
@@ -96,7 +95,7 @@
               <picture>
                 <source type="image/webp" srcset="img/andreas.webp 1x, img/andreas@2x.webp 2x">
                 <!-- 1х: 342px; 2x: 684px -->
-                <img src="img/andreas.jpg" srcset="img/andreas@2x.jpg 2x" width="342" height="503" alt="Фото городского велосипеда Andreas">
+                <img loading="lazy" src="img/andreas.jpg" srcset="img/andreas@2x.jpg 2x" width="342" height="503" alt="Фото городского велосипеда Andreas">
               </picture>
               <p>Дорожный велосипед</p>
             </a>
@@ -106,7 +105,7 @@
               <picture>
                 <source type="image/webp" srcset="img/eberhard.webp 1x, img/eberhard@2x.webp 2x">
                 <!-- 1х: 342px; 2x: 684px -->
-                <img src="img/eberhard.jpg" srcset="img/eberhard@2x.jpg 2x" width="342" height="566" alt="Фото горного велосипеда Eberhard">
+                <img loading="lazy" src="img/eberhard.jpg" srcset="img/eberhard@2x.jpg 2x" width="342" height="566" alt="Фото горного велосипеда Eberhard">
               </picture>
               <p>Горный велосипед</p>
             </a>
@@ -116,7 +115,7 @@
               <picture>
                 <source type="image/webp" srcset="img/roger.webp 1x, img/roger@2x.webp 2x">
                 <!-- 1х: 342px; 2x: 684px -->
-                <img src="img/roger.jpg" srcset="img/roger@2x.jpg 2x" width="342" height="512" alt="Фото детского велосипеда Roger">
+                <img loading="lazy" src="img/roger.jpg" srcset="img/roger@2x.jpg 2x" width="342" height="512" alt="Фото детского велосипеда Roger">
               </picture>
               <p>Детский велосипед</p>
             </a>
@@ -128,12 +127,11 @@
         <h2 id="video">Видео про велосипеды</h2>
         <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
         <div class="video__player">
-          <a class="video__link" href="https://www.youtube.com/watch?v=KkVG8nCbPvU">
+          <a class="video__link" href="https://www.youtube.com/watch?v=KkVG8nCbPvU" target="_blank">
             <picture>
               <source srcset="img/josh.webp 1x, img/josh@2x.webp 2x" type="image/webp">
-              <source srcset="img/josh.jpg 1x, img/josh@2x.jpg 2x" type="image/jpg">
               <!-- 1х: 929px; 2x: 1858px -->
-              <img class="video__media lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="img/josh.jpg" alt="Как правильно подобрать велосипед" width="929" height="522">
+              <img loading="lazy" class="video__media" src="img/josh.jpg" srcset="img/josh@2x.jpg 2x" alt="Как правильно подобрать велосипед" width="929" height="522">
             </picture>
             <noscript>
               <img src="img/josh.jpg" alt="Как правильно подобрать велосипед" width="929" height="522">
@@ -151,9 +149,8 @@
           <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
           <picture>
             <source type="image/webp" srcset="img/rectangle.webp 1x, img/rectangle@2x.webp 2x">
-            <source type="image/jpg" srcset="img/rectangle.jpg 1x, img/rectangle@2x.jpg 2x">
             <!-- 1х: 698px; 2x: 1396px -->
-            <img class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="img/rectangle.jpg" width="698" height="545" alt="Карта с адресом нашего магазина">
+            <img loading="lazy" src="img/rectangle.jpg" srcset="img/rectangle@2x.jpg 2x" width="698" height="545" alt="Карта с адресом нашего магазина">
           </picture>
           <noscript>
             <img src="img/Rectangle.jpg" width="698" height="545" alt="Карта с адресом нашего магазина">

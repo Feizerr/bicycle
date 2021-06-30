@@ -57,7 +57,7 @@ findVideos();
 
 var headerToggle = document.querySelector('.header__toggle');
 var navigation = document.querySelector('.header__navigation');
-var headerLogo = document.querySelector('.promo__logo');
+var body = document.querySelector('.body');
 var headerLinks = document.querySelectorAll('.navigation__link');
 
 headerToggle.classList.remove('visually-hidden');
@@ -66,16 +66,50 @@ navigation.classList.remove('navigation-nojs');
 
 headerToggle.addEventListener('click', function () {
   headerToggle.classList.toggle('header__toggle-closed');
-  headerLogo.classList.toggle('visually-hidden');
   navigation.classList.toggle('navigation__show');
-  navigation.classList.toggle('navigation__fixed');
+  body.classList.toggle('hidden');
 });
 
 headerLinks.forEach(function (element) {
   element.addEventListener('click', function () {
     headerToggle.classList.remove('header__toggle-closed');
-    headerLogo.classList.remove('visually-hidden');
     navigation.classList.remove('navigation__show');
-    navigation.classList.remove('navigation__fixed');
+    body.classList.remove('hidden');
   });
+});
+
+// Форма обратной связи
+
+var form = document.querySelector('.promo__form');
+var personName = form.querySelector('#name-field');
+var personPhone = form.querySelector('#tel-field');
+
+var isStorageSupport = true;
+var storageName = '';
+var storagePhone = '';
+
+try {
+  storageName = localStorage.getItem('name');
+  storagePhone = localStorage.getItem('phone');
+} catch (err) {
+  isStorageSupport = false;
+}
+
+window.addEventListener('load', function () {
+  if (storageName) {
+    personName.value = storageName;
+    personPhone.focus();
+    if (storagePhone) {
+      personPhone.value = storagePhone;
+    }
+  } else {
+    personName.focus();
+  }
+});
+
+form.addEventListener('submit', function () {
+  if (isStorageSupport) {
+    localStorage.setItem('name', personName.value);
+    localStorage.setItem('phone', personPhone.value);
+  }
 });
