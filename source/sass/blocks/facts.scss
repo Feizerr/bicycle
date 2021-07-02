@@ -45,14 +45,17 @@
   margin: 0 auto;
   max-width: 1187px;
   padding: 0 10px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 4%;
 }
 
 @media (max-width: $tablet-width) {
   .facts ul {
+    display: flex;
     flex-wrap: wrap;
     padding: 0;
+    gap: 5%;
     width: 556px;
   }
 }
@@ -67,7 +70,7 @@
 
 .facts li {
   max-width: 263px;
-  margin-right: 37px;
+  text-align: center;
 
   &:last-child {
     margin-right: 0;

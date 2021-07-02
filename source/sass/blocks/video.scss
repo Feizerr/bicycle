@@ -5,14 +5,13 @@
   color: $white;
   padding: 120px 20px 0 20px;
   margin-bottom: 150px;
-  position: relative;
 }
 
 @media (max-width: $tablet-width) {
   .video {
     background: linear-gradient(to bottom, $the-darknest 0%, $the-darknest 83%, $white 83%);
     padding: 70px 20px 0 20px;
-    margin-bottom: 70px;
+    margin-bottom: 72px;
   }
 }
 
@@ -28,6 +27,7 @@
   margin: 0 auto;
   width: 929px;
   height: 522px;
+  position: relative;
 }
 
 @media (max-width: $tablet-width) {
@@ -123,8 +123,9 @@
   background-image: url("../img/play-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
-  top: 63.5%;
-  left: 47.5%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   cursor: pointer;
 }
 
@@ -132,16 +133,11 @@
   .video__button {
     width: 90px;
     height: 90px;
-    top: 63%;
-    left: 44%;
   }
 }
 
 @media (max-width: $mobile-width) {
   .video__button {
-    top: 86%;
-    left: 50%;
-    transform: translate(-50%, -86%);
     width: 62px;
     height: 62px;
   }

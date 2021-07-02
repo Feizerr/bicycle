@@ -3,7 +3,7 @@
   text-align: center;
   background-color: $light-grey;
   padding-top: 149px;
-  padding-bottom: 140px;
+  padding-bottom: 121px;
 }
 
 @media (max-width: $tablet-width) {
@@ -43,30 +43,27 @@
 
 .types ul {
   @include list-reset();
-  display: grid;
+  display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  max-width: 1125px;
-  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  position: relative;
   margin: 0 auto;
-  column-gap: 50px;
-  padding: 0;
+  max-width: 1300px;
+  padding: 0 86px 0;
 }
 
 @media (max-width: $tablet-width) {
   .types ul {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     padding: 0 51px;
-    column-gap: 45px;
+    column-gap: 50px;
+    width: 700px;
   }
 }
 
 @media (max-width: $mobile-width) {
   .types ul {
-    display: flex;
-    flex-wrap: wrap;
+    width: 90%;
     flex-direction: column;
     align-items: center;
     padding: 0;
@@ -74,18 +71,29 @@
 }
 
 .types li {
-  width: fit-content;
+  max-width: 31%;
+  margin-bottom: 20px;
 }
 
 @media (max-width: $tablet-width) {
   .types li {
-    width: 41%;
+    max-width: 46%;
+
+    :nth-of-type(2n) {
+      margin-left: 3%;
+    }
   }
 }
 
 @media (max-width: $mobile-width) {
   .types li {
     width: 100%;
+    min-width: 270px;
+    column-gap: 0;
+
+    :nth-of-type(2n) {
+      margin-left: 0;
+    }
   }
 }
 
@@ -110,14 +118,14 @@
 }
 
 .types img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
 @media (max-width: $tablet-width) {
   .types img {
-    height: 301px;
-    width: 300px;
+    height: 300px;
+    width: 270px;
     object-fit: cover;
     border-radius: 7px;
   }
@@ -154,7 +162,7 @@
     content: "";
     border: 27px solid $cyan;
     border-radius: 50%;
-    top: 163px;
+    top: 153px;
     left: -55px;
     width: 180px;
     height: 180px;
@@ -169,6 +177,7 @@
       left: -36px;
       width: 127px;
       height: 127px;
+      border: 18px solid $cyan;
     }
   }
 }
@@ -252,13 +261,13 @@
 
 @media (max-width: $tablet-width) {
   .types__eberhard img {
-    object-position: 0 -70px;
+    object-position: 0 -57px;
   }
 }
 
 @media (max-width: $tablet-width) {
   .types__andreas img {
-    object-position: 0 -57px;
+    object-position: 4px -57px;
   }
 }
 
@@ -278,14 +287,15 @@
 
 @media (max-width: $tablet-width) {
   .types p {
-    padding-bottom: 53px;
+    padding-top: 19px;
+    padding-bottom: 29px;
   }
 }
 
 @media (max-width: $mobile-width) {
   .types p {
     padding-top: 17px;
-    padding-bottom: 43px;
+    padding-bottom: 23px;
   }
 }
 

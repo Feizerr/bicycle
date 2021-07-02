@@ -64,7 +64,7 @@
   color: rgba($black, 0.5);
   position: relative;
   cursor: pointer;
-  display: block;
+  width: max-content;
 
   &:hover {
     color: $cyan;
